@@ -1,36 +1,42 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 const greeting = ref('upload file!')
-function showPreview(event){
-  if(event.target.files.length > 0){
-    var src = URL.createObjectURL(event.target.files[0]);
-    var preview = document.getElementById("file-ip-1-preview");
-    preview.src = src;
-    preview.style.display = "block";
-  }
+const count = ref(0)
+function increment() {
+  count.value++
 }
+onMounted(() => {
+  console.log(`The initial count is ${count.value}.`)
+})
+
+function previewImage(event: Event) {
+    const fileInput = event.target as HTMLInputElement;
+    const file = fileInput.files?.[0];
+
+    if (file) {
+      const reader = new FileReader();
+
+      reader.onload = (event) => {
+        const imagePreview = document.getElementById('imagePreview');
+        if (imagePreview) {
+          imagePreview.innerHTML = `<img src="${event?.target?.result}" alt="Preview Image" width="200">`;
+        }
+      };
+
+      reader.readAsDataURL(file);
+    }
+  }
 </script>
 
 <template>
   <p class="greeting">{{ greeting }}</p>
   <form action="/upload" method="post" enctype="multipart/form-data">
-  <label for="fileUpload">Select a file:</label>
-  <input type="file" id="fileUpload" name="fileUpload">
-  <input type="submit" value="Upload">
+    <label for="fileUpload">Select a file:</label>
+    <input type="file" id="fileUpload" name="fileUpload" onchange="previewImage(event)">
+    <input type="submit" value="Upload">
   </form>
-
-  <label for="file-ip-1">Upload Image</label>
- <input type="file" id="file-ip-1" accept="image/*" onchange="showPreview(event);">
-  <div class="center">
-
-  <div class="form-input">
-
-    <div class="preview">
-   <img id="file-ip-1-preview">
- </div>
-
-  </div>
-</div> 
+  <div id="imagePreview"></div>
+  <button @click="increment">Count is: {{ count }}</button>
 </template>
 
 <style>
