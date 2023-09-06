@@ -1,7 +1,6 @@
-<script setup lang="ts">
-// import HelloWorld from './components/HelloWorld.vue'
-// import TheWelcome from './components/TheWelcome.vue'
-import DataProcess from './components/DataProcess.vue';
+<script setup>
+import HelloWorld from './components/HelloWorld.vue'
+import TheWelcome from './components/TheWelcome.vue'
 </script>
 
 <template>
@@ -14,10 +13,8 @@ import DataProcess from './components/DataProcess.vue';
   </header>
 
   <main>
-    <!-- <TheWelcome /> -->
-    <DataProcess />
+    <TheWelcome />
   </main>
-  <SentGet />
 </template>
 
 <style scoped>
