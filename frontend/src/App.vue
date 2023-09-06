@@ -5,8 +5,8 @@ import TheWelcome from './components/TheWelcome.vue'
 import axios from 'axios';
 // const res = await axios.get(`https://finalspaceapi.com/api/v0/character/?limit=2`);
 
-// const res = await axios.get(`http://127.0.0.1:8000/api/?format=json`);
-// console.log(res)
+const res = await axios.get(`http://127.0.0.1:8000/api/`);
+console.log(res)
 
 // Data to send
 // const data = {

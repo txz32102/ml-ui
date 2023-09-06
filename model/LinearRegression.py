@@ -50,5 +50,4 @@ def main():
 	# plotting regression line
 	plot_regression_line(x, y, b)
 
-if __name__ == "__main__":
-	main()
+main()
