@@ -1,6 +1,27 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
+
+import axios from 'axios';
+const res = await axios.get(`https://finalspaceapi.com/api/v0/character/?limit=2`);
+console.log(res)
+
+// Data to send
+const data = {
+  name: 'John Doe',
+  email: 'johndoe@example.com'
+};
+
+// Send POST request
+axios.post('https://example.com/api/endpoint', data)
+  .then(response => {
+    // Handle response
+    console.log(response.data);
+  })
+  .catch(error => {
+    // Handle error
+    console.error(error);
+  });
 </script>
 
 <template>
