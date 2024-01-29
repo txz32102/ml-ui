@@ -1,58 +1,38 @@
 <template>
-	<div>
-		<main id="overview-page" class="offset-content">
-        <p>
-			We have developed a simple web server that predicts druggable proteins using our classification model. This model generates a 1200-dimensional feature matrix based on PSSM, utilizing the methods proposed in our paper. It also produces 320-dimensional fine-tuned ESM2 embeddings. You can upload a FASTA file, and we will process the prediction for you. However, due to computational power restrictions, it is not advisable to upload proteins with excessively long sequences.		
-		</p>
-    </main>
-    <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-        <FileSelectButton @fileSelected="handleFileSelected" />
-        <UploadAndDownload :file="selectedFile" @uploadComplete="handleUploadComplete" />
-    </div>
-	</div>
+  <div>
+    <!-- Your other component HTML -->
+    <img :src="overViewSvg" alt="Overview Background"/>
+    <!-- More of your component HTML -->
+  </div>
 </template>
 
 <script>
-import FileSelectButton from '@/components/button/FileSelectButton.vue';
-import UploadAndDownload from '@/components/button/UploadAndDownload.vue';
+import OverViewSvg from '../assets/background/OverView.svg';
 
 export default {
-name: "PredictPage",
-
-components: {
-FileSelectButton,
-UploadAndDownload,
-},
-
-data() {
-return {
-selectedFile: null,
-downloadLink: ''
-};
-},
-
-methods: {
-handleFileSelected(file) {
-this.selectedFile = file;
-},
-
-handleUploadComplete(link) {
-this.downloadLink = link;
-}
-}
+  data() {
+    return {
+      overViewSvg: OverViewSvg
+    };
+  }
+  // Your component details
 };
 </script>
 
-<style scoped>
-.offset-content {
-    margin-left: 25%;
-    font-family: 'Times New Roman', Times, serif;
-    text-align: justify;
+<style>
+.full-screen {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
 
-.offset-content p {
-    word-wrap: break-word;
-    max-width: 70ch;
-    font-size: 24px;
+.full-screen-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* or 'contain' depending on your need */
+  top: 0;
+  left: 0;
 }
 </style>
