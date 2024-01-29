@@ -1,6 +1,3 @@
-[submodule "LiveTerm"]
-	path = LiveTerm
-	url = https://github.com/txz32102/LiveTerm.git
 [submodule "dodrio"]
 	path = dodrio
 	url = https://github.com/txz32102/dodrio.git
