@@ -40,8 +40,8 @@
             },
             },
             {
-              href: '/Result',
-              title: 'Result',
+              href: '/MachineLearning',
+              title: '机器学习简介',
               icon: {
                 element: 'img',
                 attributes: { src: ls },

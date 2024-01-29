@@ -2,8 +2,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import AboutPage from '../views/AboutPage.vue'
 import OverviewPage from '../views/OverviewPage.vue'
-import ResultPage from '../views/ResultPage.vue'
-import ContactPage from '../views/ContactPage.vue'
+import MachineLearning from '../views/MachineLearning.vue'
 import FAQPage from '../views/FAQPage.vue'
 
 const routes = [
@@ -20,12 +19,8 @@ const routes = [
     component: OverviewPage
   },
   {
-    path: '/Result',
-    component: ResultPage 
-  },
-  {
-    path: '/Contact',
-    component: ContactPage 
+    path: '/MachineLearning',
+    component: MachineLearning 
   },
   {
     path: '/FAQ',
