@@ -1,7 +1,7 @@
 // src/router/index.js
 import { createRouter, createWebHistory } from 'vue-router'
 import AboutPage from '../views/AboutPage.vue'
-import PredictPage from '../views/PredictPage.vue'
+import OverviewPage from '../views/OverviewPage.vue'
 import ResultPage from '../views/ResultPage.vue'
 import ContactPage from '../views/ContactPage.vue'
 import FAQPage from '../views/FAQPage.vue'
@@ -16,8 +16,8 @@ const routes = [
     component: AboutPage
   },
   {
-    path: '/Predict',
-    component: PredictPage
+    path: '/Overview',
+    component: OverviewPage
   },
   {
     path: '/Result',

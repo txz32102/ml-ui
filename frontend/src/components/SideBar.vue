@@ -20,20 +20,20 @@
         return {
           menu: [
             {
-              header: 'Druggable protein',
+              header: 'AI LAB',
               hiddenOnCollapse: true,
             },
             {
               href: '/About',
-              title: 'About',
+              title: '简介',
               icon: {
                 element: 'img',
                 attributes: { src: cs },
             },
             },
             {
-              href: '/Predict',
-              title: 'Predict',
+              href: '/Overview',
+              title: '功能概述',
               icon: {
                 element: 'img',
                 attributes: { src: ht },
