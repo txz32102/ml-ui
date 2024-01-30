@@ -41,7 +41,7 @@
             },
             {
               href: '/MachineLearning',
-              title: '机器学习简介',
+              title: '机器学习解释',
               icon: {
                 element: 'img',
                 attributes: { src: ls },
