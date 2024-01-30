@@ -48,8 +48,8 @@
             },
             },
             {
-              href: '/Contact',
-              title: 'Contact',
+              href: '/DeepLearning',
+              title: '深度学习解释',
               icon: {
                 element: 'img',
                 attributes: { src: llt },

@@ -23,8 +23,8 @@ const routes = [
     component: MachineLearning 
   },
   {
-    path: '/FAQ',
-    component: FAQPage 
+    path: '/DeepLearning',
+    component: DeepLearning 
   }
 ];
 
