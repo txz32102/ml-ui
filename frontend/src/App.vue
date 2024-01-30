@@ -12,23 +12,8 @@ export default {
   name: 'App',
   components: {
     SideBar,
-},
+  },
 };
-// import HelloWorld from './components/HelloWorld.vue';
-// import ThreeButton from './components/ThreeButton.vue';
-
-// export default {
-//   name: 'App',
-//   components: {
-//     ThreeButton,
-//     HelloWorld
-// },
-//   methods: {
-//     handleFileSelected(selectedFile) {
-//       console.log('Selected file:', selectedFile);
-//     },
-//   },
-// };
 </script>
 
 <style>

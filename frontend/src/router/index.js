@@ -6,11 +6,13 @@ import MachineLearning from '../views/MachineLearning.vue'
 import DeepLearning from '../views/DeepLearning.vue'
 import VisualizationPage from "../views/VisualizationPage.vue"
 import KnowledgeGraph from "../views/KnowledgeGraph.vue"
+import background from '../js/canvas-nest.js'
 
 const routes = [
   {
     path: '/',
-    component: AboutPage
+    component: AboutPage,
+    components: {background}
   },
   {
     path: '/About',
