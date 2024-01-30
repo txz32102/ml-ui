@@ -7,3 +7,6 @@
 [submodule "cnn-explainer"]
 	path = cnn-explainer
 	url = https://github.com/txz32102/cnn-explainer
+[submodule "ganlab"]
+	path = ganlab
+	url = https://github.com/txz32102/ganlab
