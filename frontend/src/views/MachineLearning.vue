@@ -16,15 +16,20 @@
       <p>由于网络技术特别是互联网技术的发展，加速了人工智能的创新研究，促使人工智能技术进一步走向实用化。1997年国际商业机器公司（简称IBM）深蓝超级计算机战胜了国际象棋世界冠军卡斯帕罗夫，2008年IBM提出“智慧地球”的概念。以上都是这一时期的标志性事件</p>
       <p><strong>第六是蓬勃发展期：2011年至今。</strong></p>
       <p>随着大数据、云计算、互联网、物联网等信息技术的发展，泛在感知数据和图形处理器等计算平台推动以深度神经网络为代表的人工智能技术飞速发展，大幅跨越了科学与应用之间的“技术鸿沟”，诸如图像分类、语音识别、知识问答、人机对弈、无人驾驶等人工智能技术实现了从“不能用、不好用”到“可以用”的技术突破，迎来爆发式增长的新高潮。</p>
+      <img :src="ml_intro1"/>
   </main>
 </template>
 
 <script>
+import ml_intro1 from '../assets/background/ml_intro1.svg';
 export default {
-  name: 'MachineLearning',
-  components: {
+  data() {
+    return {
+      ml_intro1: ml_intro1
+    };
   }
-}
+  // Your component details
+};
 </script>
 
 <style scoped>
