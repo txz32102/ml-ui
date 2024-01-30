@@ -3,7 +3,9 @@ import { createRouter, createWebHistory } from 'vue-router'
 import AboutPage from '../views/AboutPage.vue'
 import OverviewPage from '../views/OverviewPage.vue'
 import MachineLearning from '../views/MachineLearning.vue'
-import FAQPage from '../views/FAQPage.vue'
+import DeepLearning from '../views/DeepLearning.vue'
+import VisualizationPage from "../views/VisualizationPage.vue"
+import KnowledgeGraph from "../views/KnowledgeGraph.vue"
 
 const routes = [
   {
@@ -25,6 +27,14 @@ const routes = [
   {
     path: '/DeepLearning',
     component: DeepLearning 
+  },
+  {
+    path: '/Visualization',
+    component: VisualizationPage 
+  },
+  {
+    path: '/KnowledgeGraph',
+    component: KnowledgeGraph 
   }
 ];
 

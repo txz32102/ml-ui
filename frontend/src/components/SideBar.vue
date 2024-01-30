@@ -10,6 +10,7 @@
   import ht from '@/assets/icons/ht.png';
   import cs from '@/assets/icons/cs.png';
   import ls from '@/assets/icons/ls.png';
+  import wd from '@/assets/icons/wd.png';
   import xh from '@/assets/icons/xh-optimize.gif';
   export default {
     name: "SideBar",
@@ -56,8 +57,16 @@
             },
             },
             {
-              href: '/FAQ',
-              title: 'FAQ',
+              href: '/Visualization',
+              title: '可视化展示',
+              icon: {
+                element: 'img',
+                attributes: { src: wd },
+            },
+            },
+            {
+              href: '/KnowledgeGraph',
+              title: '知识图谱',
               icon: {
                 element: 'img',
                 attributes: { src: xh },
