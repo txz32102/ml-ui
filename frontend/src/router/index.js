@@ -7,12 +7,11 @@ import DeepLearning from '../views/DeepLearning.vue'
 import VisualizationPage from "../views/VisualizationPage.vue"
 import KnowledgeGraph from "../views/KnowledgeGraph.vue"
 import JupyterNotebook from '../views/JupyterDemo.vue'
-import background from '../js/canvas-nest.js'
+
 const routes = [
   {
-    path: '/',
-    component: AboutPage,
-    components: {background}
+    path: '/',  
+    component: AboutPage
   },
   {
     path: '/About',

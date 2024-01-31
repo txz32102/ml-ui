@@ -8,10 +8,14 @@
 </template>
 
 <script>
+// AboutPage.vue
+import '../js/canvas-nest.js'
+
 export default {
-    name: 'AboutPage',
-    components: {
-    }
+  name: 'AboutPage',
+  mounted() {
+    // canvas-nest.js will be executed when the component is mounted
+  }
 }
 </script>
 
