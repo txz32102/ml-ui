@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>File Upload</title>
+    <script>
+        // Function to get the value of a named cookie
+        function getCookie(name) {
+            let cookieValue = null;
+            if (document.cookie && document.cookie !== '') {
+                const cookies = document.cookie.split(';');
+                for (let i = 0; i < cookies.length; i++) {
+                    const cookie = cookies[i].trim();
+                    if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+
+        // Function to handle the file upload
+        async function uploadFile(port) {
+            const fileInput = document.getElementById('fileInput');
+
+            // Alert if no file is selected
+            if (!fileInput.files.length) {
+                alert('Please choose a file to upload.');
+                return;
+            }
+
+            // Prepare the file and form data
+            const file = fileInput.files[0];
+            const formData = new FormData();
+            formData.append('file', file);
+
+            // Get the CSRF token from cookies
+            const csrftoken = getCookie('csrftoken');
+
+            // Try to send the POST request
+            try {
+                const response = await fetch(`http://localhost:${port}/upload/`, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'X-CSRFToken': csrftoken // Include CSRF token in the header
+                    },
+                    credentials: 'include', // Include credentials (cookies)
+                });
+
+                // Handle non-okay responses
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+
+                // Process the response
+                const result = await response.text();
+                alert(result);
+            } catch (error) {
+                console.error('Error uploading file:', error);
+                alert('Error uploading file. See console for details.');
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>File Upload</h2>
+    <input type="file" id="fileInput" />
+    <button onclick="uploadFile(8100)">Upload File</button>
+</body>
+</html>
