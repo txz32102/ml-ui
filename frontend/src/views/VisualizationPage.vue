@@ -3,14 +3,20 @@
       可视化展示
     </h1>
   <TransformerDoc />
+  <GanlabDoc />
+  <CnnDoc />
 </template>
 
 <script>
 import ml_intro1 from '../assets/background/ml_intro1.svg';
 import TransformerDoc from '@/components/article/TransformerDoc.vue';
+import GanlabDoc from '@/components/article/GanlabDoc.vue';
+import CnnDoc from '@/components/article/CnnDoc.vue';
 export default {
   components: {
     TransformerDoc,
+    GanlabDoc,
+    CnnDoc
   },
   data() {
     return {

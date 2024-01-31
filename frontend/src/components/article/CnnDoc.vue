@@ -1,16 +1,16 @@
 <template>
     <main id="about-page" class="offset-content">
-      <h1 class="clickable-title" style="max-width: 40ch; font-family: 'KaiTi', '楷体', Times, serif; font-size: 36px;" @click="redirectToLocalhost">对抗神经网络</h1>
-      <p>许多机器学习系统查看某种复杂的输入(例如，图像)并产生简单的输出(如“猫”这样的标签)。相比之下，生成模型的目标恰恰相反:取一小块输入——也许是几个随机数——然后产生一个复杂的输出，比如一张看起来很逼真的脸的图像。生成对抗网络(GAN)是一种特别有效的生成模型类型，仅在几年前引入，一直是机器学习社区中非常感兴趣的主题。你可能想知道为什么我们需要一个系统来产生真实的图像，或者对任何其他类型的数据进行貌似合理的模拟。除了固有的智力挑战之外，事实证明这是一个非常方便的工具，从艺术到增强模糊图像的应用范围都很广。</p>
+      <h1 class="clickable-title" style="max-width: 40ch; font-family: 'KaiTi', '楷体', Times, serif; font-size: 36px;" @click="redirectToLocalhost">卷积神经网络</h1>
+      <p>在机器学习中，分类器为数据点分配一个类标签。例如，图像分类器为图像中存在的对象生成一个类标签(例如，bird, plane)。卷积神经网络，简称CNN，是一种分类器，它擅长解决这个问题!CNN是一种神经网络:一种用于识别数据模式的算法。一般来说，神经网络是由一组神经元组成的，这些神经元是分层组织的，每个神经元都有自己的可学习权值和偏差。让我们把CNN分解成它的基本组成部分。</p>
     </main>
   </template>
   
   <script>
   export default {
-    name: 'GanlabDoc',
+    name: 'CnnDoc',
     methods: {
       redirectToLocalhost() {
-        window.open('http://localhost:8000', '_blank');
+        window.open('http://localhost:3000', '_blank');
       }
     }
   };
