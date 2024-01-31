@@ -3,44 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Debug01 Data Upload</title>
+    <title>File Upload to Debug01</title>
 </head>
 <body>
-    <h2>Upload Data to Debug01</h2>
-    <form id="dataForm">
+    <h2>Upload File to Debug01</h2>
+    <form id="fileForm">
         <label for="title">Title:</label><br>
         <input type="text" id="title" name="title"><br>
 
         <label for="description">Description:</label><br>
         <textarea id="description" name="description"></textarea><br>
 
+        <label for="file">File:</label><br>
+        <input type="file" id="file" name="file"><br>
+
         <input type="submit" value="Submit">
     </form>
 
     <script>
-        document.getElementById('dataForm').addEventListener('submit', function(e) {
+        document.getElementById('fileForm').addEventListener('submit', function(e) {
             e.preventDefault();
 
-            var title = document.getElementById('title').value;
-            var description = document.getElementById('description').value;
-
-            var data = {
-                title: title,
-                description: description
-            };
+            var formData = new FormData();
+            formData.append('title', document.getElementById('title').value);
+            formData.append('description', document.getElementById('description').value);
+            formData.append('file', document.getElementById('file').files[0]);
 
             fetch('http://localhost:8000/api/mydata/', {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    // Add any other headers like Authorization if needed
-                },
-                body: JSON.stringify(data)
+                body: formData  // Send form data
             })
             .then(response => response.json())
             .then(data => {
                 console.log('Success:', data);
-                alert('Data uploaded successfully!');
+                alert('File uploaded successfully!');
             })
             .catch((error) => {
                 console.error('Error:', error);
