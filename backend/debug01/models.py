@@ -1,5 +1,5 @@
 from django.db import models
 
-class UploadedFile(models.Model):
-    file = models.FileField(upload_to='uploads/')
-    # Add other fields as needed (e.g., upload date, user, etc.)
+class MyData(models.Model):
+    title = models.CharField(max_length=100)
+    description = models.TextField()
