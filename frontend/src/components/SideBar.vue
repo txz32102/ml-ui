@@ -71,7 +71,15 @@
                 element: 'img',
                 attributes: { src: xh },
             },
-            }
+            },
+            {
+              href: '/JupyterDemo',
+              title: '跳转到Notebook',
+              icon: {
+                element: 'img',
+                attributes: { src: xh },
+            },
+            },
           ],
         }
       },

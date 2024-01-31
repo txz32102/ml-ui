@@ -6,8 +6,8 @@ import MachineLearning from '../views/MachineLearning.vue'
 import DeepLearning from '../views/DeepLearning.vue'
 import VisualizationPage from "../views/VisualizationPage.vue"
 import KnowledgeGraph from "../views/KnowledgeGraph.vue"
+import JupyterNotebook from '../views/JupyterDemo.vue'
 import background from '../js/canvas-nest.js'
-
 const routes = [
   {
     path: '/',
@@ -37,6 +37,10 @@ const routes = [
   {
     path: '/KnowledgeGraph',
     component: KnowledgeGraph 
+  },
+  {
+    path: '/JupyterNotebook',
+    component: JupyterNotebook 
   }
 ];
 
