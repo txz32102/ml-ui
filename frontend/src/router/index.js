@@ -38,7 +38,7 @@ const routes = [
     component: KnowledgeGraph 
   },
   {
-    path: '/JupyterNotebook',
+    path: '/JupyterDemo',
     component: JupyterNotebook 
   }
 ];
