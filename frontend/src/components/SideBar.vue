@@ -48,4 +48,7 @@ export default {
 </script>
 
 <style scoped>
+.SidebarMenu {
+  margin-top: 60px; /* 添加这一行 */
+}
 </style>
