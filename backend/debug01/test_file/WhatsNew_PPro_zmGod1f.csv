@@ -1,0 +1,65 @@
+App Version,Grouping ID (Jira Epic / BUGFIX / INTERNAL / MISC),Jira ID (Story / Task / Bug),Salience,Ask User For Rating,Earliest Relevant Change Version,Only Relevant Platform,URL To Discussion Thread,Changelist ID,Public/Internal message
+15.4.1,Changes-Since,,,,,,,,
+,DVAAE-4213804,DVAAE-4213804,HideBetaFeature,,,,,,AE Extended dynamic range feature
+,DVACL-1,DVACL-1,HideBetaFeature,,,,,,Hiding
+,DVAAE-4216228,DVAAE-4216228,HideBetaFeature,,,,,,3D Bin Icons
+,DVAAE-4217843,DVAAE-4217843,HideBetaFeature,,,,,,3D Model Import
+,DVAAE-4214902,DVAAE-4214902,HideBetaFeature,,,,,,Faster Illustrator/PDF rasterization
+,DVAAE-4216825,DVAAE-4216825,HideBetaFeature,,,,,,Improved performance for CPU Camera Lens Blur
+,DVAGE-5512,DVAGE-5722,UnhideBetaFeature,,,,,,Common AE Mogrt View
+,DVACL-9476,DVACL-14222,UnhideBetaFeature,,,,,,
+,DVAPR-4221633,DVAPR-4221633,HideBetaFeature,,,,,,UXP Homescreen has shipped
+,DVAPR-4221525,DVAPR-4221525,HideBetaFeature,,,,,,Icons for What's New in Beta and Provide Feedback
+,DVARU-4220306,DVARU-4220306,HideBetaFeature,,,,,,Icons for What's New in Beta and Provide Feedback - Rush
+,DVAAU-4202811,DVAAU-4202811,HideBetaFeature,,,,,,Enable Quick Effect Scan
+,DVAAE-4217276,DVAAE-4217276,HideBetaFeature,,,,,,Enable new SDK for multi-frame effects
+,DVASE-852,DVASE-852,HideBetaFeature,,,,,,Transcript panel
+,DVACL-13820,DVACL-13820,UnhideBetaFeature,,,,,,
+,DVAGE-5693,DVAGE-5693,UnhideBetaFeature,,,,,,
+,DVAPR-4214751,DVAPR-4214751,UnhideBetaFeature,,,,,,
+,DVAPR-4214751,DVAPR-4214751,,,,,,,Click on the 'View more' link to visit the beta forum.  Let us know what you think of the new workflow.
+,DVAPR-4214751,DVAPR-4214751,,,,,,,"Import mode is a visual interface for importing media.  You can organize in grid view or list view, and filter content by media type (video, audio, images, all)."
+,DVAPR-4214751,DVAPR-4214751,,,,,,,"Import from multiple locations in the same import process, and add folder locations as favorites for easy access using the star icon."
+,DVAPR-4214751,DVAPR-4214751,,,,,,,Preview the clips by hover scrubbing and click to select.  Selected clips will show up in the tray at the bottom.
+,DVAPR-4214751,DVAPR-4214751,,,,,,,Give the project a name and location at the bottom.
+,DVAPR-4214751,DVAPR-4214751,,,,,,,Automatically import the selected clips to a new sequence (optional).
+,DVAPR-4214751,DVAPR-4214751,,,,,,,"The header bar has been streamlined to provide top-level navigation and easy switching between Import, Edit, and Export."
+,DVAPR-4214751,DVAPR-4214751,,,,,,,Workspaces have been relocated into a dropdown menu on the right which is a much better use of space.
+,DVAPR-4214751,DVAPR-4214751,,,,,,,Export mode is a destination-centric full-screen mode that is focused on where your video is going and you can publish directly to online destinations like YouTube.
+,DVAPR-4214751,DVAPR-4214751,,,,,,,"Export to multiple destinations at the same time right out of Premiere Pro.  There is still an option to send to Media Encoder, however. "
+,DVAPR-4214751,DVAPR-4214751,,,,,,,"Encoding settings are arranged into logical groups of accordions and entire groups can be powered off all at once.  For example, you can have many effects enabled and disable the whole group all at once."
+,DVAPR-4214751,DVAPR-4214751,,,,,,,"Additional presets can be found in the preset manager which is accessed at the bottom of the preset dropdown, or in the overflow menu next to the preset dropdown."
+,DVAPR-4214751,DVAPR-4214751,,,,,https://community.adobe.com/t5/premiere-pro-beta/discuss-redesigned-header-bar/m-p/12128985#M3603,,
+22.0.0.30,BUGFIX,DVAFM-4999,,,,,,dd0524d566aed33e661037c982f216438b5e00b3,"""$$$/PPro/BetaFeature/DVAFM-4999/409=Fixed an issue leading a hang with the error message - Sleep mode is active - appearing on screen"""
+22.0.0.39,BUGFIX,DVARC-1455,,,,,,cf7f8c21dce127613309bf4ac8a125fa7a10af27,"""$$$/PPro/BetaFeature/DVARC-1455/419=Improve export performance on M1 MACs."""
+,DVAPR-4214751,DVAPR-4214751,,RequestRating,,,,,
+22.0.0.51,DVAPR-4230209,DVAPR-4230209,,RequestRating,,,https://community.adobe.com/t5/premiere-pro-beta/discuss-new-simplify-sequence-feature-available-in-premiere-pro-beta/td-p/12309548,,
+22.0.0.61,DVASE-1236,DVASE-1236,,,,,,6534a034c302a3e6e0ac52f4571892445856ef9e,"""$$$/PPro/BetaFeature/DVASE-1236/421a=The Auto Tone button in Lumetri Effect's Basic Correction section provides a superior color enhancement for any clip on the timeline. It now uses machine learning to predict the set of Basic Correction parameters that would enhance the colors of the media."""
+22.0.0.61,DVASE-1236,DVASE-1236,,,,,,6534a034c302a3e6e0ac52f4571892445856ef9e,"""$$$/PPro/BetaFeature/DVASE-1236/421b=Click the Auto Tone button in Lumetri's Basic Correction section to try this effect."""
+22.0.0.63,BUGFIX,DVACL-12920,,,,,,00dc82cb9e6a959217eb78551fe47ed12e8693d6,"""$$$/private/PPro/BetaFeature/DVACL-12920/439=Show Link Media Dialog for offline media while opening Adobe Team Projects."""
+,DVACO-2389,DVACO-2389,UnhideBetaFeature,,,,,,
+22.0.0.66,MISC,DVARC-1441,,,,,,155f9945846b495b14ad87769f55be6ccd779053,"""$$$/PPro/BetaFeature/DVARC-1441/442=Alpha Glow Effect is now GPU Accelerated"""
+,DVACO-2405,DVACO-2405,UnhideBetaFeature,,,,,,
+,DVACO-2384,DVACO-2384,UnhideBetaFeature,,,,,,
+,DVACO-2559,DVACO-2559,UnhideBetaFeature,,,,,,
+22.0.0.71,DVAPR-4230209,DVAPR-4233060,,,,,,3bad2c58d177a2c28cc7cd3057cef56c6a75cbe1,"""$$$/PPro/BetaFeature/DVAPR-4233060/443=Added tooltips to controls in Simplify Sequence dialog."""
+,DVASE-1236,DVASE-1236,UnhideBetaFeature,,,,,,
+,DVAAE-4217603,DVAAE-4217603,HideBetaFeature,,,,,,
+22.0.0.72,MISC,DVAPR-4231221,,,,,,f8e5c9c3aa7b7c71f2df99d838b15d3e83fbdd27,"""$$$/private/PPro/BetaFeature/DVAPR-4231221/448=Show filter-by-color results from Markers panel on Timeline"""
+,DVAGE-4368,DVAGE-6110,UnhideBetaFeature,,,,,,"""$$$/private/PPro/BetaFeature/PenToolConstrainedPoint/Desc=Constrained point creation with Pen Tool"
+22.0.0.78,MISC,DVARC-1640,,,,,,447a27f7eadd9ced92a18422919227e9171544c6,"""$$$/private/PPro/BetaFeature/DVARC-1640/451=Reduce Interlace Flicker Effect is now GPU accelerated in Premiere Pro"""
+22.0.0.105,DVAPR-4233007,DVAPR-4233557,,,,,,63cdfc6125e4cc47ecc52318237c13383407d73d,"""$$$/private/PPro/BetaFeature/DVAPR-4233557/460=Gang Source and Program button has been added to the Program Monitor tool bar."""
+,DVACO-2104,DVACO-2104,UnhideBetaFeature,,,,,,
+22.0.0.132,MISC,DVAAT-493,,,,,,f037dcd7c28ce233966f415f58151903ce9e49d9,"""$$$/private/AU/BetaFeature/DVAAT-493/465=Enabling EUCON control surface protocal for Apple M1 systems"""
+22.0.0.132,DVACO-2405,DVACO-2405,,,,,https://community.adobe.com/t5/premiere-pro-beta-discussions/discuss-color-management-improvements-h264-hevc-xavc-l-and-xavc-slog/m-p/12388841#M4573,,
+22.0.0.132,DVACO-2384,DVACO-2384,,,,,https://community.adobe.com/t5/premiere-pro-beta-discussions/discuss-color-management-improvements-h264-hevc-xavc-l-and-xavc-slog/m-p/12388841#M4573,,
+22.0.0.132,DVACO-2559,DVACO-2559,,,,,https://community.adobe.com/t5/premiere-pro-beta-discussions/discuss-color-management-improvements-h264-hevc-xavc-l-and-xavc-slog/m-p/12388841#M4573,,
+22.0.0.132,DVACO-2298,DVACO-2298,,,,,https://community.adobe.com/t5/premiere-pro-beta-discussions/discuss-log-color-spaces-now-available-in-interpret-footage/m-p/12388964#M4574,,
+22.0.0.132,DVACO-2491,DVACO-2491,,,,,https://community.adobe.com/t5/premiere-pro-beta-discussions/discuss-improved-lumetri-video-scopes/m-p/12389594#M4576,,
+22.0.0.132,DVACO-2490,DVACO-2490,,,,,https://community.adobe.com/t5/premiere-pro-beta-discussions/discuss-improved-lumetri-video-scopes/m-p/12389594#M4576,,
+22.0.0.132,DVACO-2389,DVACO-2389,,,,,https://community.adobe.com/t5/premiere-pro-beta-discussions/discuss-improved-lumetri-video-scopes/m-p/12389594#M4576,,
+,DVACO-2583,DVACO-2583,HideBetaFeature,,,,,,
+,DVAPR-4231551,DVAPR-4231551,,,,,https://community.adobe.com/t5/premiere-pro-beta-discussions/discuss-change-multi-cam-thumbnails-and-a-shortcut-to-change-poster-frames-now-in-beta/m-p/12387204#M4572,,
+22.0.0.138,INTERNAL,DVAPR-4233757,Unreviewed,,,,,eaf7c97b240d593f30242ae49ac11888240fbe1a,Fix code so that built-in workspace name instrumented is not localized
+22.0.0.138,INTERNAL,DVAFM-5244,Unreviewed,,,,,05ee349f522870482edcfdae2a6ebc41756b9816,Fix PrPro crash on importing MP4 with DASH format
+22.0.0.150,INTERNAL,DVAPR-4234088,Unreviewed,,,,,47c55db050cfc5691ecdad33f2c8491b1fd9bae2,Set Simplify Sequence feature to kReleased
