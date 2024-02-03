@@ -1,25 +1,27 @@
 <template>
-  <head>
-    
-  </head>
-  <body>
-    Are you ok?
-    <iframe src="http://localhost:8888/tree#notebooks" width="100%" height="600"></iframe>
-  </body>
+  <div>
+    决策树（Decision Tree）是在已知各种情况发生概率的基础上，通过构成决策树来求取净现值的期望值大于等于零的概率，评价项目风险，判断其可行性的决策分析方法，是直观运用概率分析的一种图解法。由于这种决策分支画成图形很像一棵树的枝干，故称决策树。在机器学习中，决策树是一个预测模型，他代表的是对象属性与对象值之间的一种映射关系。Entropy = 系统的凌乱程度，使用算法ID3, C4.5和C5.0生成树算法使用熵。这一度量是基于信息学理论中熵的概念。
+决策树是一种树形结构，其中每个内部节点表示一个属性上的测试，每个分支代表一个测试输出，每个叶节点代表一种类别。分类树（决策树）是一种十分常用的分类方法。它是一种监督学习，所谓监督学习就是给定一堆样本，每个样本都有一组属性和一个类别，这些类别是事先确定的，那么通过学习得到一个分类器，这个分类器能够对新出现的对象给出正确的分类。这样的机器学习就被称之为监督学习。
+    <br>  
+    决策树代码示意<a :href="url">
+      <img :src="image" alt="My Image"  class="my-image">
+    </a>
+  </div>
 </template>
 
 <script>
-import ml_intro1 from '../assets/background/ml_intro1.svg';
 export default {
   data() {
     return {
-      ml_intro1: ml_intro1
-    };
+      url: 'http://20.222.59.85:23333/tree/jupyter/demo.ipynb',
+      image: require('../assets/icons/jupyter.png') // 替换为你的图片路径
+    }
   }
-  // Your component details
-};
+}
 </script>
 
 <style scoped>
-
+.my-image {
+  width: 2vw;
+}
 </style>
